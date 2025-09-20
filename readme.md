@@ -104,10 +104,3 @@ If using temporary AWS credentials (ASIA keys), don’t forget AWS_SESSION_TOKEN
 Internal use only – Genese Solutions Pvt. Ltd.
 
 ---
-
-Would you like me to also generate a **`.env.example` file** in code, so your teammates can just copy it to `.env` without exposing real credentials?
-
-
-
-
-
