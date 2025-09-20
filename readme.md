@@ -15,8 +15,6 @@ This project automates the generation of daily **On-Call Support Reports** by fe
 - Publishes reports to **Confluence** under:
   Space → On call support → YYYY-MM → YYYY-MM-DD
 
-yaml
-Copy code
 - Supports AWS Profiles, IAM roles, or direct access keys.
 
 ---
@@ -46,14 +44,10 @@ The IAM user/role must have at least:
  cd automate-on-call-support
 Install dependencies:
 
-bash
-Copy code
 npm install
 Configure environment variables:
 Copy .env.example to .env and fill in values:
 
-ini
-Copy code
 AWS_REGION=ap-south-1
 AWS_PROFILE=default
 
@@ -80,16 +74,13 @@ CONFLUENCE_AUTH_EMAIL=your.email@genese.com
 CONFLUENCE_AUTH_TOKEN=your-api-token
 Run the script:
 
-bash
-Copy code
+
 npm start
 📊 Output
 Console output prints the report for today.
 
 If Confluence integration is enabled (CONFLUENCE_ENABLED=true), a page is created:
 
-vbnet
-Copy code
 GUMP / On call support / YYYY-MM / YYYY-MM-DD
 Example page sections:
 
@@ -112,9 +103,6 @@ If using temporary AWS credentials (ASIA keys), don’t forget AWS_SESSION_TOKEN
 📄 License
 Internal use only – Genese Solutions Pvt. Ltd.
 
-yaml
-Copy code
-
 ---
 
 Would you like me to also generate a **`.env.example` file** in code, so your teammates can just copy it to `.env` without exposing real credentials?
@@ -123,4 +111,3 @@ Would you like me to also generate a **`.env.example` file** in code, so your te
 
 
 
-Ask ChatGPT
